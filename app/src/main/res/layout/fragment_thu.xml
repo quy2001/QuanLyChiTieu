@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragment.FragmentThu">
+
+    <!-- TODO: Update blank fragment layout -->
+   <com.google.android.material.tabs.TabLayout
+       android:id="@+id/tablayout_thu"
+       android:background="@color/cam"
+       app:tabSelectedTextColor="@color/xanh"
+       app:tabTextColor="@color/white"
+       app:tabIndicatorColor="@color/xanh"
+       app:tabIndicatorHeight="2dp"
+       android:layout_marginTop="55dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+   </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager_thu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.viewpager.widget.ViewPager>
+
+
+</LinearLayout>

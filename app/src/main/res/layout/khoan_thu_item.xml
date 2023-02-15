@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp"
+    android:layout_marginTop="25dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <TextView
+            android:id="@+id/tv_tenkhoanthu"
+            android:background="#BEFF9800"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:text="Tên Khoản  Thu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:layout_below="@id/tv_tenkhoanthu"
+            android:id="@+id/tv_sotien_khoanthu"
+            android:textSize="20sp"
+            android:textColor="#00FF00"
+            android:paddingLeft="10dp"
+            android:text="Số tiền"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:layout_below="@id/tv_sotien_khoanthu"
+            android:id="@+id/tv_ngaythu_khoanthu"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:text="Ngày thu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:layout_below="@id/tv_ngaythu_khoanthu"
+            android:id="@+id/tv_noidung_khoanthu"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:text="Nội dung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_loaithu_khoanthu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_below="@id/tv_noidung_khoanthu"
+            android:text="Loại thu"
+            android:textColor="@color/black"
+            android:textSize="20sp">
+        </TextView>
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/iv_delete"
+            android:id="@+id/iv_edit"
+            android:src="@drawable/edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp">
+        </ImageView>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/iv_delete"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/delete2"
+            android:layout_width="30dp"
+            android:layout_height="30dp">
+        </ImageView>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

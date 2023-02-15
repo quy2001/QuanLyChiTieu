@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="55dp"
+    android:orientation="vertical"
+    tools:context=".Fragment.FragmentTimKiemThu">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/timkiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:iconifiedByDefault="false"
+        app:queryHint="Nhập tên khoản thu"
+        >
+    </androidx.appcompat.widget.SearchView>
+
+    <EditText
+        android:id="@+id/edTu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:drawableRight="@drawable/ic_baseline_date__24"
+        android:layout_marginRight="10dp"
+        android:hint="Từ ngày"
+        android:textSize="12dp"
+        />
+    <EditText
+        android:id="@+id/edDen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:drawableRight="@drawable/ic_baseline_date__24"
+        android:layout_marginRight="10dp"
+        android:hint="Đến ngày"
+        android:textSize="12dp"
+        />
+   <Spinner
+       android:id="@+id/spTKLoaiThu"
+       android:layout_margin="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       >
+   </Spinner>
+    <Button
+        android:id="@+id/btnTimKiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:layout_gravity="center"
+        android:text="Tìm kiếm"/>
+    <TextView
+        android:id="@+id/tvTongtienThu"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Tổng tiền khoản thu: "/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_TKThu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

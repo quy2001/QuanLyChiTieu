@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:title="@string/menu_home"
+            android:icon="@drawable/ic_baseline_home_24"/>
+        <item
+            android:id="@+id/khoanthu"
+            android:title="@string/menu_khoanthu"
+            android:icon="@drawable/ic_baseline_thu_wallet_24"/>
+        <item
+            android:id="@+id/khoanchi"
+            android:title="@string/menu_khoanchi"
+            android:icon="@drawable/ic_baseline_wallet_chi"
+            />
+        <item
+            android:id="@+id/thongke"
+            android:title="@string/menu_thongke"
+            android:icon="@drawable/ic_baseline_query_thongke_24"/>
+    </group>
+    <item android:title="Khác">
+        <menu>
+            <item
+                android:id="@+id/dangxuat"
+                android:title="@string/menu_dangxuat"
+                android:icon="@drawable/ic_baseline_account_circle_24"
+                />
+            <item
+                android:id="@+id/thoat"
+                android:title="@string/menu_thoat"
+                android:icon="@drawable/ic_baseline_output_24"
+                />
+        </menu>
+
+    </item>
+
+</menu>
